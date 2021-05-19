@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            position: relative;
+            top: 115px;
+            text-align: center;
+            color: aliceblue;
+            font-size: 40px;
+        }
+        html { 
+  background: url(plain-black-09.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+.button5{
+    position: relative;
+    top: 100px;
+    font-size: 25px;
+    color: black;
+    background-color: cornflowerblue;
+}
+.button5 :hover{
+    cursor: pointer;
+    background-color: darkgreen;
+    
+}
+form {
+    text-align: center;
+    color: aliceblue;
+    font-size: 25px;
+    padding: 20px;
+    margin: 30;
+}
+.formdetail{
+    position: relative;
+    top: 100px;
+    margin:15px;
+}
+nav{
+    
+	position: fixed;
+	width: 100%;
+	line-height: 60px;
+}
+
+nav ul{
+	float: left;
+	margin: 0;
+	padding-right: 42px;
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 16px 32px;
+}
+
+nav ul li a
+{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition:0.6s ease;
+
+}
+
+nav ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.logo{
+	height: 78px;
+	float: right;
+	margin: 16px 48px;
+}
+
+
+    </style>
+</head>
+<body>
+    <nav>
+
+        <image class="logo" src="logo3.png">
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Genres</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="indexfeed.html">Feedback</a></li>
+                
+                
+
+            </ul>
+        </div>
+    </nav>
+    <h1>Feedback Form</h1>
+    <form action="mailto:divyanshukushwaha654@gmail.com" method="post" enctype="text/plain">
+        <label for="fname" class="formdetail"> First name:</label>
+        <input type="text" class="formdetail"  ><br>
+        <label for="lname"class="formdetail">Last name:</label>
+        <input type="text" class="formdetail" ><br>
+        <label for="email"class="formdetail">Email:</label>
+        <input type="email" class="formdetail" ><br>
+        <label for="message" class="formdetail" >Write your message here :</label><br>
+        <textarea id="message" name="Feedback" rows="15" cols="50" class="formdetail"></textarea><br>
+        
+        <input type="submit"  id="sendbutton" value="Send" class="button5">
+      </form> 
+
+</body>
+</html>
